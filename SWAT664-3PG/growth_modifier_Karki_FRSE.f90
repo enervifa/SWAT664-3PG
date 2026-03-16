@@ -327,7 +327,8 @@
         !gammaN = gammaN1
         if (mort_age_key(idp) == 1.0) then
             if ( tgammaN(idp) /= 0.d0 ) then
-                gammaN = gammaN1(idp) + (gammaN0(idp) - gammaN1(idp)) * Exp(-0.69314718 * ( tree_age(j) / tgammaN(idp)) ** ngammaN(idp)) !!LN2 = 0.69314718
+                gammaN = gammaN1(idp) + (gammaN0(idp) - gammaN1(idp)) * &
+         exp(-0.69314718 * (tree_age(j) / tgammaN(idp)) ** ngammaN(idp)) !!LN2 = 0.69314718 mod Eliana
             end if
             if (gammaN > 0.) then
                 mort_stress = gammaN * bio_stock(j)/12.d0/100.d0

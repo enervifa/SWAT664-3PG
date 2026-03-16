@@ -28,9 +28,9 @@
 
      !------biomass_massbalance_ritesh---------
             
-       hedbm = (/"  TreeHt_m","       DBH"," AvjBmEch_T","      ETmm",  &       !4
-                 " biolosday"," root_loss","  stem_loss","  fol_loss",  &       !8
-                 "  bio_root","  bio_stem"," bio_folage","   LAI_3PG",  &
+       hedbm = (/"  TreeHt_m","       DBH","AvjBmEch_T","      ETmm",  &       !4
+                 " biolosday"," root_loss"," stem_loss","  fol_loss",  &       !8
+                 "  bio_root","  bio_stem","bio_folage","   LAI_3PG",  &
                  "  NPPC_day","  3PGBmass","       AGB" ," soil_resp",  &
                  "       NEP"  /)
        
@@ -39,9 +39,9 @@
        !          "  bio_root","  bio_stem"," bio_folage","   LAI_3PG",  &
        !          "  tree_age","  3PGBmass"," SWATBmass"  /)
 
-       !hedbm = (/" bioday3PG"," OrgNRes_d","  orgn_fert"," org_grazf",  &       !4
+       !hedbm = (/" bioday3PG"," OrgNRes_d","  orgn_fert"," org_grazf",  &       !4 !!!! Modifeid Eliana
        !          "  no3_immo","    ab_no3"," absorb_nh3"," solc_orgn",  &       !8
-       !          " solcOrgIn","  sedOrgnO","   PerQ_DON"," Surq_DonO",  &
-       !          " LatQTDonO","   nh4_min","  SWATBMass"  /)
+       !          " solcOrgIn","  sedOrgnO","  PerQ_DON"," Surq_DonO",  &
+       !          " LatQTDonO","   nh4_min"," SWATBMass"  /)
       return
       end                                                            
